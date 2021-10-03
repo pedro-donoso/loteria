@@ -1,8 +1,8 @@
 ##Steps
 
-1. Install axios:
+1. Installatios:
 
 ```
-npm install axios
+npm install axios nodemailer
 
 ```

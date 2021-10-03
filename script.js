@@ -5,7 +5,6 @@
           .then((res) => res.json())
           .then((premio) => {
             Premio = premio;
-
             imprimirPremio();
           });
       }
@@ -32,7 +31,6 @@
       }
 
       //   Participantes
-
       let participantes = [];
 
       function getParticipantes() {

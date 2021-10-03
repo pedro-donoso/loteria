@@ -15,15 +15,15 @@
 <body>
   <h4>Concursantes ¡A Ganar!</h4>
   <div class="container-fluid">
-    <div class="row w-100 m-auto">
+    <div class="row m-auto loteria">
       <div class="col-10">
-        <h6 class="text-left">
-          <button class="btn btn-sm btn-warning" onclick="nuevoUsuario()">
+        <h6 class="loteria__agregar">
+          <button class="btn btn-sm loteria__agregar-boton" onclick="nuevoUsuario()">
             Agregar Participante
           </button>
         </h6>
         <table class="table">
-          <thead class="bg-info text-dark">
+          <thead class="loteria__tabla">
             <th>ID</th>
             <th>Email</th>
             <th>Nombre</th>
@@ -40,7 +40,7 @@
           <img style="width: 100%" src="" />
         </div>
         <div class="my-5">
-          <button class="btn btn-sm btn-success" onclick="generarGanador()">
+          <button class="btn btn-sm loteria__winner" onclick="generarGanador()">
             Winner is...
           </button>
         </div>
@@ -57,7 +57,7 @@
       aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-body text-center">
+          <div class="modal-body loteria__modal">
             <h6>
               Nombre del premio <br />
               <input type="text" id="nuevoPremio" />
@@ -65,9 +65,6 @@
             <h6>
               URL de la imagen del premio <br /><input id="nuevoPremioImg" type="text" />
             </h6>
-            <!-- <button class="btn btn-sm btn-success" onclick="cambiarPremio()">
-              Cambiar
-            </button> -->
           </div>
         </div>
       </div>

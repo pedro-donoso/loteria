@@ -1,3 +1,6 @@
+![loteria](https://user-images.githubusercontent.com/68760595/135778959-8413b532-58bf-469d-971f-dc11a1d713ed.png)
+
+
 ##Steps
 
 1. Installatios:

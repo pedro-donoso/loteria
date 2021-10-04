@@ -24,6 +24,11 @@ npm install axios nodemailer
 node index.js
 
 ```
+5. Results in gmail
+
+**email by Nodemailer**
+
+![mail](https://user-images.githubusercontent.com/68760595/135779945-68c90b8d-ec63-4c72-85d5-0610e6a1e2e4.png)
 
 
 

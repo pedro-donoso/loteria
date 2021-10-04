@@ -18,7 +18,12 @@
 npm install axios nodemailer
 
 ```
+4. Run -> in terminal:
 
+```
+node index.js
+
+```
 
 
 

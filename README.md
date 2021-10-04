@@ -1,5 +1,4 @@
-![loteria](https://user-images.githubusercontent.com/68760595/135778959-8413b532-58bf-469d-971f-dc11a1d713ed.png)
-
+![resultado](https://user-images.githubusercontent.com/68760595/135781363-1f27535b-68b9-4253-b84e-9ac8435ca95e.png)
 
 ##Steps
 
@@ -28,7 +27,8 @@ node index.js
 
 **email by Nodemailer**
 
-![mail](https://user-images.githubusercontent.com/68760595/135779945-68c90b8d-ec63-4c72-85d5-0610e6a1e2e4.png)
+![ganador](https://user-images.githubusercontent.com/68760595/135781409-69b88450-436f-43b5-978b-6c9a5c341b0e.png)
+
 
 
 

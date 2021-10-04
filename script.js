@@ -15,20 +15,6 @@
       }
 
       getPremio();
-      // Modificar Premio
-      function cambiarPremio() {
-        let nuevoPremio = {
-          nombre: $("#nuevoPremio").val(),
-          img: $("#nuevoPremioImg").val(),
-        };
-        fetch("http://localhost:8080/premio", {
-          method: "PUT",
-          body: JSON.stringify(nuevoPremio),
-        }).then(() => {
-          $("#exampleModal").modal("hide");
-          getPremio();
-        });
-      }
 
       //   Participantes
       let participantes = [];
@@ -47,11 +33,11 @@
         participantes.forEach((u) => {
           $("tbody").append(`
                 <tr>
-                    <td>${u.id}</td>
-                    <td>${u.correo}</td>
-                    <td>${u.nombre}</td>
-                    <td>${u.pais}</td>
                     <td><img width="50" src="${u.foto}"/></td>
+                    <td>${u.id}</td>
+                          <td>${u.nombre}</td>
+                    <td>${u.correo}</td>
+                    <td>${u.pais}</td>
                 </tr>
               `);
         });
@@ -70,17 +56,16 @@
       getParticipantes();
 
       function generarGanador() {
-        $('.spinner').removeClass('d-none')
+ 
         fetch("http://localhost:8080/ganador")
           .then((res) => res.json())
           .then((ganador) => {
             $(".ganador").removeClass("d-none");
             console.log(ganador);
             $("#ganador").html(`
-              <h3>${ganador.nombre}</h3>
-              <img class="100 d-block m-auto" src="${ganador.foto}"/>
+              <h5>${ganador.nombre}</h5>
+              <img class="d-block m-auto" src="${ganador.foto}"/>
             `);
-            $('.spinner').addClass('d-none')
           });
       }
 

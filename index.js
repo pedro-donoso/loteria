@@ -36,13 +36,6 @@ http
                 body = chunk.toString();
             });
 
-            req.on("end", () => {
-                const nuevoPremio = JSON.parse(body);
-                fs.writeFile("premio.json", JSON.stringify(nuevoPremio), (err) => {
-                    err ? console.log("Oh no! ..."): console.log("OK")
-                    res.end("Premio editado con éxito");
-                });
-            });
         }
 
         if(req.url == "/ganador" && req.method == "GET"){

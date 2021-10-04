@@ -9,7 +9,7 @@ const nuevoUsuario = async () => {
         const user = {
             id: uuidv4().slice(30),
             correo: usuario.email,
-            nombre: `${usuario.name.title} ${usuario.name.first} ${usuario.name.last}`,
+            nombre: `${usuario.name.first} ${usuario.name.last}`,
             foto: usuario.picture.large,
             pais: usuario.location.country,
         };
